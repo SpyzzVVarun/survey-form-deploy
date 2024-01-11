@@ -2,12 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Replace with your MongoDB connection string
 mongoose.connect(process.env.MONGODB_URI);
 
 // Define a schema for the survey data
@@ -16,7 +16,7 @@ const surveySchema = new mongoose.Schema({
 });
 
 // Create a model based on the schema
-const Survey = mongoose.model('Survey', surveySchema);
+const Survey = mongoose.model('Survey', surveySchema, "test");
 
 // Endpoint to receive survey data
 app.post('/submit-survey', async (req, res) => {
