@@ -7,7 +7,7 @@
     "install-server": "cd backend && npm install",
     "start-server": "cd backend && node server.js",
     "install-client": "cd client && npm install && npm install react-scripts --save",
-    "build-client": "cd client && npm run build",
+    "build-client": "cd client && sudo npm run build",
     "start-client": "cd client && npm run start"
   },
   "keywords": [],
