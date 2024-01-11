@@ -24,7 +24,7 @@ function SurveyComponent() {
 
 // Function to submit survey results to the backend
 function submitSurveyResults(surveyData) {
-    fetch('http://172.28.176.1:3001/submit-survey', {
+    fetch('https://devrev-survey-form.onrender.com/submit-survey', {
         method: 'POST',
         mode: "cors",
         headers: {
