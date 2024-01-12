@@ -10,12 +10,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 let productName = "SampleProduct";
 let disappointing = "How did we disappoint you and what can we do to make things right?"
 let improvements = "What can we do to make your experience more satisfying?";
-let checkboxes = ["Performance"
-, "User Interface"
-, "Quality Support"
-, "Stability"
-, "Documentations and Demos"];
-
+let checkboxes = ["Performance", "User Interface", "Quality Support", "Stability", "Documentations and Demos"];
 
 function SurveyComponent() {
 
