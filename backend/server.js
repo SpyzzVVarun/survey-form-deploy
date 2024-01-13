@@ -27,7 +27,7 @@ try {
   const data = fs.readFileSync(filePath, 'utf8');
   const jsonObject = JSON.parse(data);
 //   console.log(jsonObject);
-  collectionName = jsonObject["company"];
+  collectionName = jsonObject["survey"];
 } catch (error) {
   console.error('Error reading or parsing JSON:', error);
   collectionName = 'test'; // Set a default collection name
