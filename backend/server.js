@@ -35,7 +35,7 @@ try {
   PAT = jsonObject["PAT"];
 } catch (error) {
   console.error('Error reading or parsing JSON:', error);
-  collectionName = 'Survey1';
+  collectionName = 'Maple_Finance_Gateway_0';
 }
 
 // Create a model based on the schema
