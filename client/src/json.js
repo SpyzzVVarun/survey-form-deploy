@@ -115,40 +115,7 @@ export const json = {
             "fr": "Veuillez ne pas sélectionner plus de trois fonctionnalités."
           },
           "isRequired": true,
-          "choices": [
-            {
-              "value": "performance",
-              "text": "Performance"
-            },
-            {
-              "value": "stability",
-              "text": {
-                "default": "Stability",
-                "fr": "Stabilité"
-              }
-            },
-            {
-              "value": "ui",
-              "text": {
-                "default": "User interface",
-                "fr": "Interface utilisateur"
-              }
-            },
-            {
-              "value": "learning-materials",
-              "text": {
-                "default": "Documentations and Demos",
-                "fr": "Documentation et démos"
-              }
-            },
-            {
-              "value": "support",
-              "text": {
-                "default": "Quality support",
-                "fr": "Accompagnement de qualité"
-              }
-            }
-          ],
+          "choices": checkboxes,
           "showOtherItem": true,
           "otherPlaceholder": {
             "default": "Please specify...",
