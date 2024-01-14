@@ -174,19 +174,18 @@ let json = {
             "type": "boolean",
             "name": "rebuy",
             "title": {
-              "default": "Would you buy our product again?",
+              "default": "Would you consider using our service again?",
               "fr": "Achèteriez-vous à nouveau notre produit?"
             },
             "isRequired": true
           },
           {
-            "type": "text",
-            "name": "email",
-            "title": {
-              "default": "We respect your privacy. If you choose to provide your email, we'll use it solely for further correspondance relevant to this survey.",
-              "fr": "Achèteriez-vous à nouveau notre produit?"
-            },
-            "isRequred": false,
+          "type": "text",
+          "name": "email",
+          "title": {
+            "default": "Your email address will be used solely to ensure each participant submits only one response and to maintain the integrity of the survey results. We respect your privacy and assure you that your email will not be used for any other purpose, nor will it be shared with any third parties. Thank you for your cooperation",
+            "fr": "Achèteriez-vous à nouveau notre produit?"
+          },
             "validators": [
               {
                 "type": "email",
@@ -201,7 +200,7 @@ let json = {
               "default": "yourname@example.com",
               "fr": "votrenom@exemple.com"
             },
-            
+            "isRequired": true
           }
         ]
       },
