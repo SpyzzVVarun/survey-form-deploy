@@ -82,6 +82,8 @@ app.post('/submit-survey', async (req, res) => {
       const actionableResult = JSON.parse(completionAgain.choices[0].message.content);      
       req.body.actionable = actionableResult["Actionable"];
 
+      req.body.summarised = false;
+      req.body.date = "14-12-2023";
       // Save both survey data and sentiment result to the database
       const newSurvey = new Survey({
           surveyData: req.body,
