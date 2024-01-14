@@ -109,7 +109,7 @@ let json = {
               "fr": "Autres fonctionnalités"
             },
             "colCount": 2,
-            "maxSelectedChoices": 3
+            "maxSelectedChoices": 4
           },
           {
             "type": "checkbox",
