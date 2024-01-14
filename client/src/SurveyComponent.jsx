@@ -5,6 +5,10 @@ import "survey-core/defaultV2.min.css";
 import styles from "./index.css";
 import jsonData from "./constants";
 import ReCAPTCHA from "react-google-recaptcha"
+// require("dotenv").config({ path: '../../.env' });
+
+const BACKEND_URL="https://devrev-survey-form.onrender.com"
+const RECAPTCHA_SITE_KEY="6LcAQ04pAAAAAM-c367odKatWtWjB_1GODLej0ok"
 
 let productName = jsonData["productName"];
 let disappointing = jsonData["disappointing"];
@@ -253,7 +257,7 @@ function SurveyComponent() {
                 {!showSurvey ? ( // Conditional rendering based on showSurvey state
                     <div className="centered-div">
                         <ReCAPTCHA
-                            sitekey="6LcAQ04pAAAAAM-c367odKatWtWjB_1GODLej0ok"
+                            sitekey= {RECAPTCHA_SITE_KEY}
                             onChange={handleCaptchaChange}
                             className={styles.recaptchaContainer} // Apply CSS class
                         />
@@ -270,7 +274,7 @@ function SurveyComponent() {
 
 // Function to submit survey results to the backend
 function submitSurveyResults(surveyData) {
-    fetch('https://devrev-survey-form.onrender.com/submit-survey', {
+    fetch(BACKEND_URL + '/submit-survey', {
         method: 'POST',
         mode: "cors",
         headers: {
