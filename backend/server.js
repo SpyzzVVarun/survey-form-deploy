@@ -35,7 +35,7 @@ try {
   PAT = jsonObject["PAT"];
 } catch (error) {
   console.error('Error reading or parsing JSON:', error);
-  collectionName = 'test';
+  collectionName = 'Survey1';
 }
 
 // Create a model based on the schema
